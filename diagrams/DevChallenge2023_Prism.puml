@@ -1,13 +1,14 @@
-@startuml H4x2_prism
+@startuml DevChallenge2023_Prism
 title Tide PRISM authentication
 !include https://raw.githubusercontent.com/bschwarz/puml-themes/master/themes/aws-orange-light/puml-theme-aws-orange-light.puml
 
 actor "User" as usr
-collections "Servers" as ork
+participant "Server" as ork
 
 group Precondition
 note over usr
     <latex>password : \textbf{Password attempt}</latex>
+    <latex>EncryptedMessage : \textbf{Secret message}</latex>
 end note 
 
 note over ork
@@ -32,7 +33,7 @@ ork --> usr: <latex> [A \cdot r_1] \cdot f_i </latex>
 deactivate ork
 
 hnote over usr
-    <latex>K \gets ( \sum_{i=1}^{t} [A \cdot r_1 \cdot f_i] ) \cdot r_1^{-1} \equiv A \cdot f</latex>
+    <latex>K \gets ( [A \cdot r_1 \cdot f_i] ) \cdot r_1^{-1} \equiv A \cdot f</latex>
     <latex>k \gets H(K)</latex>
     <latex>Prize \gets \mathsf{DEC}_k(EncryptedMessage)</latex>
 end note

@@ -6,10 +6,8 @@ title H4x2 User Flow
 
 partition "**precondition**" {
     :password : Attempted password
-    PRISM : Augmented password
-    PRISMi : Partial of a PRISM.  Each node holds a PRISMi
-    ORK 1 - Closed Node
-    ORK 2 - Exposed Node
+    PRISM : Password augmentor
+    ORK - Server Node
     Criteria - IP not throttled and Password is correct
     ]
 }
@@ -21,20 +19,11 @@ start
 :Blur password;
 :Send to ORK Nodes;
 partition "**ORK Nodes**" {
-    if (is ORK 1?) then (no)
-        partition "**ORK 2**" {
-        :Send PRISMi;
-        }
-    else (yes)
-        partition "**ORK 1**" {
-            if (Criteria met?) then (yes)
-                :Apply Function (PRF) to\n the blurred password;
-            else (no)
-                :Send random response;
-            endif
-        }
-    
-    endif    
+        if (Criteria met?) then (yes)
+            :Apply Function (PRF) to\n the blurred password;
+        else (no)
+            :Send random response;
+        endif
 }
 
 ->result;
