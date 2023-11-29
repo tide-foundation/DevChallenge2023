@@ -1,5 +1,5 @@
-@startuml H4x2_Challenge
-title H4X Challenge 1
+@startuml DevChallenge2023_signin
+title Dev Challenge flowchart
 !include https://raw.githubusercontent.com/bschwarz/puml-themes/master/themes/aws-orange-light/puml-theme-aws-orange-light.puml
 
 actor Consumer as "User"
@@ -16,37 +16,46 @@ hOrk-->Consumer
 deactivate hOrk
 
 note over Consumer
-    password = GeneratePassword()
+    password1 = GeneratePassword()
+    password2 = "AAA"
     r1 = random
+    r2 = random
     //<color orange>Hash and convert password to EC point</color>//
-    gPass = **hash2Point(password)**
+    gPass1 = **hash2Point(password1)**
+    gPass2 = **hash2Point(password2)**
     //<color orange>"Hide" the points with a random"</color>//
-    gBlurPass = **gPass ⋅ r**
-    exposedFlag = False
+    gBlurPass1 = **gPass1 ⋅ r1**
+    gBlurPass2 = **gPass2 ⋅ r2**
+    exposedFlag1 = True
+    exposedFlag1 = False
 end note
 
-Consumer->mORKx: Setup(gBlurPass,exposedFlag)
+Consumer->mORKx: Setup(gBlurPass1,gBlurPass2,exposedFlag)
 activate mORKx
 
 note over mORKx
     PRISMi = random
     //<color orange>Apply the PRF on the hidden point</color>//
-    gBlurPassPRISMi = **gBlurPass ⋅ PRISMi**
+    gBlurPassPRISM1i = **gBlurPass1 ⋅ PRISMi**
+    gBlurPassPRISM2i = **gBlurPass2 ⋅ PRISMi**
     StoreLocally(PRISMi,exposedFlag)
 end note 
 
-mORKx-->Consumer: gBlurPassPRISM1i
+mORKx-->Consumer: gBlurPassPRISM1i , gBlurPassPRISM2i
 deactivate mORKx
 
 note over Consumer
-    gPassPRISM = **gBlurPassPRISM1i ⋅ modInv(r1)** //<color orange>( gPass ⋅ PRISM )</color>//
-    PRISMKey = hash( gPassPRISM )
-    encMsg = aesEnc_PRISMKey( "Congrats! Your prize is xxxxxxxx" )
+    gPassPRISM1 = **gBlurPassPRISM1i ⋅ modInv(r1)** //<color orange>( gPass1 ⋅ PRISM )</color>//
+    gPassPRISM2 = **gBlurPassPRISM2i ⋅ modInv(r2)** //<color orange>( gPass2 ⋅ PRISM )</color>//
+    PRISMKey1 = hash( gPassPRISM1 )
+    PRISMKey2 = hash( gPassPRISM1 )
+    encMsg1 = aesEnc_PRISMKey1( "Congrats! Your prize is xxxxxxxx" )
+    encMsg2 = aesEnc_PRISMKey2( "This is an example message" )
 end note
 
-Consumer->hOrk: StoreMsgs(encMsg)
+Consumer->hOrk: StoreMsgs(encMsg1,encMsg2)
 activate hOrk
-note over hOrk: StoreLocally(encMsg)
+note over hOrk: StoreLocally(encMsg1,encMsg2)
 hOrk-->Consumer: Ack
 deactivate hOrk
 deactivate Consumer
@@ -59,11 +68,12 @@ note over Consumer
 end note 
 
 note over hOrk
-    encMsg : Encrypted Prize
+    encMsg1 : Encrypted Prize
+    encMsg2 : Example encrypted message
 end note 
 
 note over mORKx
-    PRISMi : PRISM shard //<color orange>Calculated at sign up</color>//
+    PRISMi : PRISM augmentor //<color orange>Calculated at sign up</color>//
     exposedFlag : Boolean configuration setting
 end note
 
@@ -102,7 +112,7 @@ alt \nIsSafePoint == True \nand\nisIpThrottled == False ?\n
 else \nIsSafePoint == False \nor\nisIpThrottled == True ?\n
     note over mORKx
         //<color orange>Send pseudorandom response</color>//
-        gBlurPassPRISMi = **gBlurPass ⋅ H(PRISMi)**
+        gBlurPassPRISMi = **gBlurPass ⋅ hash(PRISMi)**
     end note
 end
 
@@ -123,7 +133,7 @@ deactivate mORKx
 note over Consumer
     gPassPRISM = **gBlurPassPRISMi ⋅ modInv(r1)** //<color orange>( gPass ⋅ PRISM )</color>//
     PRISMKey = hash( gPassPRISM )
-    Prize = aesDec_PRISMKey( encMsg )
+    Prize = aesDec_PRISMKey( encMsg1 )
     if Prize.decryptionSuccessful then Display( Prize )
     Example = aesDec_PRISMKey( encMsg2 )
     if Example.decryptionSuccessful then Display( Example )

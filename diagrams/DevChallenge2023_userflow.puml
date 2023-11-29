@@ -1,8 +1,8 @@
-@startuml H4x2_userflow
+@startuml DevChallenge2023_userflow
 !include https://raw.githubusercontent.com/bschwarz/puml-themes/master/themes/aws-orange-light/puml-theme-aws-orange-light.puml
 
 
-title H4x2 User Flow
+title Dev Challenge User Flow
 
 partition "**precondition**" {
     :password : Attempted password
