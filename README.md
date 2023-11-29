@@ -1,26 +1,26 @@
-# The Tide H4X.2 challenge
-The [H4X.2 challenge](http://h4x2.tide.org) is a showcase of the Tide Protocol's novel user authentication and digital protection technology, inviting the online community to learn, contribute and engage with Tide in the development of the protocol. It also encourages participants to identify and report security flaws, improvements or fixes via a bounty offer.
+# The Tide Developer challenge - 2023
+The [Dev2023 challenge](http://h4DevChallenge.tide.org) is a technical puzzle challenge using  Tide Protocol's novel user authentication and digital protection technology, aimed at assessing the thinking, skills and personalities of software developers in areas relevant to Tide.
 
-This challenge is the second series of the community-engagement program by the [Tide Foundation](https://tide.org) with a specific focus on Tide's next-generation technology: A new technology that grants access using keys **NOBODY** holds. Not even Tide! In this series, the challenge will change and evolve according to the community engagement, and will gradually introduce additional facets of the technology.
+This challenge is part of an engagement program by the [Tide Foundation](https://tide.org) with a specific focus on Tide's next-generation technology: A new technology that grants access using keys **NO ONE** will ever hold. Not even Tide! 
 
-## Here's the 1st Challenge
-The concept of the first challenge is simple.  A secret code is hidden and is only unlocked when the correct password is entered.  The first one to post the secret code on Tide's [#general](https://discord.com/channels/968760660659953714/1039488732639801414) channel on its Discord server - wins!  The password authentication process is obfuscated and decentralized using Tide's [PRISM](https://github.com/tide-foundation/Tide-h4x2/blob/main/diagrams/svg/H4x2_prism.svg) cryptography - the world's most secure password authentication[^pwd].  In this challenge, only two ORKs[^ork] perform the authentication.  One ORK will be completely exposed and offers full transparency to its internal data and processes while the other ORK remains private.  The entire source code for the challenge, together with full documentation, is offered herewith for those wishing to take a deeper look.  The user flow can be found below and the full technical diagram can be found [here](https://github.com/tide-foundation/Tide-h4x2/blob/main/diagrams/svg/H4x2_Challenge.svg).
+## Let's go
+The concept of this challenge is simple: A secret code is hidden and can only be unlocked when the correct password is entered. Get the code - and you solved the challenge!  The password authentication process is obfuscated and decentralized using Tide's [PRISM](https://github.com/tide-foundation/DevChallenge2023/blob/main/diagrams/svg/DevChallenge2023_prism.svg) cryptography - the world's most secure password authentication[^pwd].  In this challenge, only one ORK[^ork] node performs the authentication.  One ORK's internal data is secret but its processes are available here transparently.  The entire source code for the challenge, together with full documentation, is offered herewith for those wishing to take a deeper look.  The user flow can be found below and the full technical diagram can be found [here](https://github.com/tide-foundation/DevChallenge2023/blob/main/diagrams/svg/DevChallenge2023_SignInFlow.svg).
 
 ## User Flow Diagram
-![alt text](https://github.com/tide-foundation/Tide-h4x2/blob/main/diagrams/svg/H4x2_userflow.svg "Flow Diagram")
+![alt text](https://github.com/tide-foundation/DevChallenge2023/blob/main/diagrams/svg/DevChallenge2023_userflow.svg "Flow Diagram")
 
 ## Components
-1. **H4x2-Node** - Minimal version of the Tide ORK, specific to this challenge.
-1. **H4x2-TinySDK** - Minimal SDK for front-end website integration.
-1. **H4x2-front** - Front-end website for this challenge.
-    1. **Modules/H4x2-TideJS** - Tide Libraries including encryption + PRISM
+1. **DevChallenge-Node** - Minimal version of the Tide ORK, specific to this challenge.
+1. **DevChallenge-TinySDK** - Minimal SDK for front-end website integration.
+1. **DevChallenge-front** - Front-end website for this challenge.
+    1. **Modules/DevChallenge-TideJS** - Tide Libraries including encryption + PRISM
 1. **Diagrams** -  Diagrams for this challenge.
-    1. [**H4x2_Challenge**](https://raw.githubusercontent.com/tide-foundation/Tide-h4x2/main/diagrams/svg/H4x2_Challenge.svg) - A technical diagram of the challenge.  
-    2. [**H4x2_prism**](diagrams/svg/H4x2_prism.svg) - The mathematical diagram of Tide's PRISM. 
-    3. [**H4x2_userflow**](https://github.com/tide-foundation/Tide-h4x2/blob/main/diagrams/svg/H4x2_userflow.svg) - A user flow diagram. 
+    1. [**Technical diagram**](https://raw.githubusercontent.com/tide-foundation/DevChallenge2023/main/diagrams/svg/DevChallenge2023_SignInFlow.svg) - A technical diagram of the challenge.  
+    2. [**PRISM**](diagrams/svg/DevChallenge2023_prism.svg) - The mathematical diagram of Tide's PRISM. 
+    3. [**User flow**](https://github.com/tide-foundation/DevChallenge2023/blob/main/diagrams/svg/DevChallenge2023_userflow.svg) - A user flow diagram. 
 
 # Installation
-This guide aims to assist you in replicating the entire challenge environment locally, with 2 ORKs - so you can run it yourself freely.
+This guide aims to assist you in replicating the entire challenge environment locally, with 1 ORK node - so you can run it yourself freely.
 
 While all the components of the environment are cross-platform, this manual describes how to set it up in a Windows environment. Similar steps can be followed to achieve the same on Linux.
 
@@ -30,40 +30,32 @@ There is also a [video](https://vimeo.com/780973408/d5df625214) to help you with
 
 The following components are required to be set up ahead of the deployment:
 1. [.NET 6 Build apps - SDK](https://dotnet.microsoft.com/en-us/download/dotnet/6.0 ".net Core 6 Download")
-1. Clone Repository (`git clone https://github.com/tide-foundation/Tide-h4x2/`)
+1. Clone Repository (`git clone https://github.com/tide-foundation/DevChallenge2023/`)
 
 ## Deployment
 ### ORKs
 Open a CMD terminal (not powershell)
 ````
-cd Tide-h4x2\H4x2-Node\H4x2-Node
+cd DevChallenge2023\DevChallenge-Node\DevChallenge-Node
 set ISPUBLIC=true
 set PRISM_VAL=12345
 dotnet run --urls=http://localhost:6001
 ````
-Open another terminal
-````
-cd Tide-h4x2\H4x2-Node\H4x2-Node
-set ISPUBLIC=false
-set PRISM_VAL=67890
-dotnet run --urls=http://localhost:7001
-````
-As you would want to generate cryptographically secure PRISM_VAL values, follow the [Debug Web Page](https://github.com/tide-foundation/Tide-h4x2#debug-web-page) steps to host the debug web page and click on the button 'Get Random'.
+
+As you would want to generate cryptographically secure PRISM_VAL values, follow the [Debug Web Page](https://github.com/tide-foundation/DevChallenge2023#debug-web-page) steps to host the debug web page and click on the button 'Get Random'.
 
 Much like the ORKs that are running in the cloud, both of your ORKs have:
 1. Different visibilities
 2. Different PRISM values
 
-To test this, navigate to http://localhost:6001/prizeKey. Notice how a value appears. In contrast, navigating to http://localhost:7001/prizeKey will show PAGE NOT FOUND, as the environment variable ISPUBLIC in the terminal set to false.
-
-***NOTE: The reason we set one ORK to public is to show that even if one ORK is compromised, the user's key is still entirely secure.***
+To test this, navigate to http://localhost:6001/prizeKey. Notice how a value appears. In contrast, navigating to that same page will show PAGE NOT FOUND if the environment variable ISPUBLIC in the terminal set to false.
 
 ### Static Web Page
-Go to `Tide-h4x2\h4x2-front\js`
+Go to `DevChallenge2023\DevChallenge-front\js`
 
 In `shifter.js`, modify line 184 so that the front-end page will contact your local ORKs:
-From this: `urls: ["https://h4x2-ork1.azurewebsites.net", "https://h4x2-ork2.azurewebsites.net"],`
-To this: `urls: ["http://localhost:6001", "http://localhost:7001"],`
+From this: `urls: ["https://devchallenge-ork1.azurewebsites.net"],`
+To this: `urls: ["http://localhost:6001"],`
 
 Now to host the front-end webpage; this guide will use a simple Python http server, but you can you anything you like.
 
@@ -72,13 +64,13 @@ Host the page with Python:
 python -m http.server 9000
 ````
 
-Navigating to http://localhost:9000 will take you with the Tide H4x2 welcome page (similar to https://h4x2.tide.org).
+Navigating to http://localhost:9000 will take you with the Tide Dev Challenge welcome page (similar to https://DevChallenge2023.tide.org).
 
 ### Debug Web Page 
 NOTE: This is only if you'd like to test your local ORKs with encryption/decryption of your own data with your own password
 
 ````
-cd Tide-h4x2\h4x2-front\modules\H4x2-TideJS
+cd DevChallenge2023\DevChallenge-front\modules\DevChallenge-TideJS
 ````
 
 If you look at the file \test\tests.js, you'll see a bunch of functions with different names, e.g. test1, test2...
@@ -96,7 +88,7 @@ Clicking each button will run the corresponding test in test.js. **The output of
 
 ## Test
 ### Encrypting your own data
-In the H4x2-TideJS directory (Tide-h4x2\h4x2-front\modules\H4x2-TideJS):
+In the DevChallenge-TideJS directory (DevChallenge2023\DevChallenge-front\modules\DevChallenge-TideJS):
 1. In test4 function of test/test.js, change "AAA" to any password of your choosing. Also change "Example" to anything you would like to encrypt.
 2. Go to http://localhost:8000/test.html and press F5 (to reload the page)
 3. Right-click -> inspect -> console
@@ -104,7 +96,7 @@ In the H4x2-TideJS directory (Tide-h4x2\h4x2-front\modules\H4x2-TideJS):
 5. Should show a base64 encoded text in console
 
 ### Decrypting your own data
-In the h4x2-front directory:
+In the DevChallenge-front directory:
 1. Modify the index.html file:
 
     Change this line: `<p hidden id="test">G4GmY31zIa35tEwck14URCEAIjeTA8NV+DgjHpngxASGnTU=</p>`
@@ -117,13 +109,13 @@ In the h4x2-front directory:
 
 Question: *So what was the data encrypted with?*
 
-It was encrypted with the hash of a 'key point'[^key] only known to the *user who knows the password + has access to the ORKs*.
+It was encrypted with the hash of a 'key point'[^key] only known to the *user who knows the password + has access to the ORK*.
 
-In essence: ***key point = passwordPoint * (Prism1 + Prism2)***
+In essence: ***key point = passwordPoint * PRISM***
 
 Where passwordPoint is a point derived from the user's password. 
 
-Even if someone knows Prism1, they still have to try virtually infinite possibilities for Prism2, which will be throttled by the ORK, hence lowering their probably of success to virtually zero.
+Even if someone knows PRISM, they still have to brute-force all password possibilities (which is why this is an online process that is be throttled by the ORK, hence lowering their probably of success to virtually zero).
 
 ## Troubleshooting
 Ask for any help in the Discord channel! The community and our devs are there for you.
