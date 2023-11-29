@@ -3,7 +3,7 @@ title Tide PRISM authentication
 !include https://raw.githubusercontent.com/bschwarz/puml-themes/master/themes/aws-orange-light/puml-theme-aws-orange-light.puml
 
 actor "User" as usr
-participant "Server" as ork
+participant "Server" as ork 
 
 group Precondition
 note over usr
