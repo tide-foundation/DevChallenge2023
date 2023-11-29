@@ -53,7 +53,7 @@ To test this, navigate to http://localhost:6001/prizeKey. Notice how a value app
 ### Static Web Page
 Go to `DevChallenge2023\DevChallenge-front\js`
 
-In `shifter.js`, modify line 184 so that the front-end page will contact your local ORKs:
+In `shifter.js`, modify line 205 so that the front-end page will contact your local ORKs:
 From this: `urls: ["https://devchallenge-ork1.azurewebsites.net"],`
 To this: `urls: ["http://localhost:6001"],`
 

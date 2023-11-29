@@ -26,7 +26,7 @@
 
 import {PrismFlow} from "../modules/DevChallenge-TideJS/index.js";
 
-var welcomeMsg = 'You Crack it! | You Keep it!| Find the Password...|';	
+var welcomeMsg = '..... | DO YOU | THINK | YOU HAVE | WHAT IT TAKES ? | Enter the Password...|';	
 var varSize = 13;
 
 var S = {
@@ -139,7 +139,6 @@ S.UI = (function () {
   var input = document.querySelector('.ui-input'),
       ui = document.querySelector('.ui'),
       help = document.querySelector('.help'),
-      commands = document.querySelector('.commands'),
       overlay = document.querySelector('.overlay'),
       canvas = document.querySelector('.canvas'),
       interval,
@@ -202,7 +201,7 @@ S.UI = (function () {
 
     if(value !== welcomeMsg){ // don't wanna try welcome msg
       var config = {
-        urls: ["https://ork1.westus2.cloudapp.azure.com", "https://ork2.westus2.cloudapp.azure.com"],
+        urls: ["https://ork1.westus2.cloudapp.azure.com"],
         encryptedData: [document.getElementById("test").innerText, document.getElementById("prize").innerText]
       }
 
@@ -331,40 +330,6 @@ S.UI = (function () {
 
       if (overlay.classList.contains('overlay--visible')) {
         reset(true);
-      }
-    });
-
-    commands.addEventListener('click', function (e) {
-      var el,
-          info,
-          demo,
-          url;
-
-      if (e.target.classList.contains('commands-item')) {
-        el = e.target;
-      } else {
-        el = e.target.parentNode.classList.contains('commands-item') ? e.target.parentNode : e.target.parentNode.parentNode;
-      }
-
-      info = el && el.querySelector('.commands-item-info');
-      demo = el && info.getAttribute('data-demo');
-      url = el && info.getAttribute('data-url');
-
-      if (info) {
-        overlay.classList.remove('overlay--visible');
-
-        if (demo) {
-          input.value = demo;
-
-          if (isTouch) {
-            reset();
-            performAction(input.value);
-          } else {
-            input.focus();
-          }
-        } else if (url) {
-          window.location = url;
-        }
       }
     });
 
