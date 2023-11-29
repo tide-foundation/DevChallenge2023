@@ -1,0 +1,402 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" contentStyleType="text/css" height="1066.6667px" preserveAspectRatio="none" style="width:703px;height:1066px;" version="1.1" viewBox="0 0 703 1066" width="703.125px" zoomAndPan="magnify"><defs><linearGradient id="g14uz287o4z7jy0" x1="50%" x2="50%" y1="0%" y2="100%"><stop offset="0%" stop-color="#FFFFFF"/><stop offset="100%" stop-color="#CCCCCC"/></linearGradient><linearGradient id="g14uz287o4z7jy1" x1="50%" x2="50%" y1="0%" y2="100%"><stop offset="0%" stop-color="#F08E41"/><stop offset="100%" stop-color="#EC7211"/></linearGradient></defs><g><rect fill="url(#g14uz287o4z7jy0)" height="45.0846" id="_title" rx="4.1667" ry="4.1667" style="stroke:#FFFFFF;stroke-width:1.0416666666666667;" width="315.625" x="192.1875" y="15.625"/><text fill="#4E5D6C" font-family="&quot;Verdana&quot;" font-size="20.8333" font-weight="bold" lengthAdjust="spacing" textLength="294.7917" x="202.6042" y="45.3796">Dev Challenge User Flow</text><rect fill="none" height="155.013" rx="4.1667" ry="4.1667" style="stroke:#EC7211;stroke-width:1.5625;" width="371.875" x="228.3854" y="68.0013"/><path d="M342.9688,68.0013 L342.9688,85.6771 L332.5521,96.0938 L228.3854,96.0938 " fill="none" style="stroke:#EC7211;stroke-width:1.5625;"/><text fill="#EC7211" font-family="&quot;Verdana&quot;" font-size="12.5" font-weight="bold" lengthAdjust="spacing" textLength="93.75" x="236.7188" y="85.8541">precondition</text><rect fill="url(#g14uz287o4z7jy1)" height="104.0039" style="stroke:#EC7211;stroke-width:0.5208333333333334;" width="351.0417" x="238.8021" y="106.5104"/><text fill="#FFFFFF" font-family="&quot;Verdana&quot;" font-size="12.5" lengthAdjust="spacing" textLength="210.4167" x="254.4271" y="133.7382">password : Attempted password</text><text fill="#FFFFFF" font-family="&quot;Verdana&quot;" font-size="12.5" lengthAdjust="spacing" textLength="189.5833" x="254.4271" y="148.289">PRISM : Password augmentor</text><text fill="#FFFFFF" font-family="&quot;Verdana&quot;" font-size="12.5" lengthAdjust="spacing" textLength="117.7083" x="254.4271" y="162.8398">ORK - Server Node</text><text fill="#FFFFFF" font-family="&quot;Verdana&quot;" font-size="12.5" lengthAdjust="spacing" textLength="319.7917" x="254.4271" y="177.3905">Criteria - IP not throttled and Password is correct</text><text fill="#FFFFFF" font-family="&quot;Verdana&quot;" font-size="12.5" lengthAdjust="spacing" textLength="4.1667" x="254.4271" y="191.9413"> </text><ellipse cx="414.3229" cy="254.2643" fill="#0073BB" rx="10.4167" ry="10.4167" style="stroke:#222222;stroke-width:1.0416666666666667;"/><rect fill="url(#g14uz287o4z7jy1)" height="45.8008" rx="4.1667" ry="4.1667" style="stroke:#EC7211;stroke-width:0.5208333333333334;" width="133.3333" x="347.6563" y="310.4818"/><text fill="#FFFFFF" font-family="&quot;Verdana&quot;" font-size="12.5" lengthAdjust="spacing" textLength="102.0833" x="363.2813" y="337.7096">Enter password</text><rect fill="url(#g14uz287o4z7jy1)" height="45.8008" rx="4.1667" ry="4.1667" style="stroke:#EC7211;stroke-width:0.5208333333333334;" width="122.9167" x="352.8646" y="377.1159"/><text fill="#FFFFFF" font-family="&quot;Verdana&quot;" font-size="12.5" lengthAdjust="spacing" textLength="91.6667" x="368.4896" y="404.3437">Blur password</text><rect fill="url(#g14uz287o4z7jy1)" height="45.8008" rx="4.1667" ry="4.1667" style="stroke:#EC7211;stroke-width:0.5208333333333334;" width="157.2917" x="335.6771" y="443.75"/><text fill="#FFFFFF" font-family="&quot;Verdana&quot;" font-size="12.5" lengthAdjust="spacing" textLength="126.0417" x="351.3021" y="470.9778">Send to ORK Nodes</text><rect fill="none" height="185.319" rx="4.1667" ry="4.1667" style="stroke:#EC7211;stroke-width:1.5625;" width="429.1667" x="200.2604" y="499.9674"/><path d="M302.3438,499.9674 L302.3438,517.6432 L291.9271,528.0599 L200.2604,528.0599 " fill="none" style="stroke:#EC7211;stroke-width:1.5625;"/><text fill="#EC7211" font-family="&quot;Verdana&quot;" font-size="12.5" font-weight="bold" lengthAdjust="spacing" textLength="81.25" x="208.5938" y="517.8202">ORK Nodes</text><polygon fill="#FFFFFF" points="367.9688,545.7682,460.6771,545.7682,473.1771,558.2682,460.6771,570.7682,367.9688,570.7682,355.4688,558.2682,367.9688,545.7682" style="stroke:#CCCCCC;stroke-width:0.5208333333333334;"/><text fill="#4E5D6C" font-family="&quot;Verdana&quot;" font-size="12.5" lengthAdjust="spacing" textLength="82.2917" x="373.1771" y="562.5956">Criteria met?</text><text fill="#4E5D6C" font-family="&quot;Verdana&quot;" font-size="12.5" lengthAdjust="spacing" textLength="21.875" x="328.3854" y="550.1119">yes</text><text fill="#4E5D6C" font-family="&quot;Verdana&quot;" font-size="12.5" lengthAdjust="spacing" textLength="16.6667" x="478.3854" y="550.1119">no</text><rect fill="url(#g14uz287o4z7jy1)" height="60.3516" rx="4.1667" ry="4.1667" style="stroke:#EC7211;stroke-width:0.5208333333333334;" width="182.2917" x="221.0938" y="581.1849"/><text fill="#FFFFFF" font-family="&quot;Verdana&quot;" font-size="12.5" lengthAdjust="spacing" textLength="151.0417" x="236.7188" y="608.4127">Apply Function (PRF) to</text><text fill="#FFFFFF" font-family="&quot;Verdana&quot;" font-size="12.5" lengthAdjust="spacing" textLength="139.5833" x="240.8854" y="622.9635">the blurred password</text><rect fill="url(#g14uz287o4z7jy1)" height="45.8008" rx="4.1667" ry="4.1667" style="stroke:#EC7211;stroke-width:0.5208333333333334;" width="184.375" x="424.2188" y="581.1849"/><text fill="#FFFFFF" font-family="&quot;Verdana&quot;" font-size="12.5" lengthAdjust="spacing" textLength="153.125" x="439.8438" y="608.4127">Send random response</text><polygon fill="#FFFFFF" points="414.3229,647.7865,426.8229,660.2865,414.3229,672.7865,401.8229,660.2865,414.3229,647.7865" style="stroke:#CCCCCC;stroke-width:0.5208333333333334;"/><rect fill="url(#g14uz287o4z7jy1)" height="45.8008" rx="4.1667" ry="4.1667" style="stroke:#EC7211;stroke-width:0.5208333333333334;" width="197.9167" x="315.3646" y="731.0872"/><text fill="#FFFFFF" font-family="&quot;Verdana&quot;" font-size="12.5" lengthAdjust="spacing" textLength="166.6667" x="330.9896" y="758.315">Assemble and Test PRISM</text><polygon fill="#FFFFFF" points="361.1979,797.7214,467.4479,797.7214,479.9479,810.2214,467.4479,822.7214,361.1979,822.7214,348.6979,810.2214,361.1979,797.7214" style="stroke:#CCCCCC;stroke-width:0.5208333333333334;"/><text fill="#4E5D6C" font-family="&quot;Verdana&quot;" font-size="12.5" lengthAdjust="spacing" textLength="95.8333" x="366.4063" y="814.5487">PRISM correct?</text><text fill="#4E5D6C" font-family="&quot;Verdana&quot;" font-size="12.5" lengthAdjust="spacing" textLength="21.875" x="321.6146" y="802.065">yes</text><text fill="#4E5D6C" font-family="&quot;Verdana&quot;" font-size="12.5" lengthAdjust="spacing" textLength="16.6667" x="485.1563" y="802.065">no</text><polygon fill="#FFFFFF" points="87.5,859.1797,152.0833,859.1797,164.5833,871.6797,152.0833,884.1797,87.5,884.1797,75,871.6797,87.5,859.1797" style="stroke:#CCCCCC;stroke-width:0.5208333333333334;"/><text fill="#4E5D6C" font-family="&quot;Verdana&quot;" font-size="12.5" lengthAdjust="spacing" textLength="54.1667" x="92.7083" y="876.0071">example</text><rect fill="url(#g14uz287o4z7jy1)" height="45.8008" rx="4.1667" ry="4.1667" style="stroke:#EC7211;stroke-width:0.5208333333333334;" width="216.6667" x="11.4583" y="914.3229"/><text fill="#FFFFFF" font-family="&quot;Verdana&quot;" font-size="12.5" lengthAdjust="spacing" textLength="45.8333" x="27.0833" y="941.5507">Display</text><text fill="#0000FF" font-family="&quot;Verdana&quot;" font-size="12.5" font-style="italic" lengthAdjust="spacing" textLength="131.25" x="81.25" y="941.5507">"This is an Example"</text><polygon fill="#FFFFFF" points="311.4583,859.1797,352.0833,859.1797,364.5833,871.6797,352.0833,884.1797,311.4583,884.1797,298.9583,871.6797,311.4583,859.1797" style="stroke:#CCCCCC;stroke-width:0.5208333333333334;"/><text fill="#4E5D6C" font-family="&quot;Verdana&quot;" font-size="12.5" lengthAdjust="spacing" textLength="30.2083" x="316.6667" y="876.0071">prize</text><rect fill="url(#g14uz287o4z7jy1)" height="45.8008" rx="4.1667" ry="4.1667" style="stroke:#EC7211;stroke-width:0.5208333333333334;" width="165.625" x="248.9583" y="914.3229"/><text fill="#FFFFFF" font-family="&quot;Verdana&quot;" font-size="12.5" lengthAdjust="spacing" textLength="45.8333" x="264.5833" y="941.5507">Display</text><text fill="#0000FF" font-family="&quot;Verdana&quot;" font-size="12.5" font-style="italic" lengthAdjust="spacing" textLength="80.2083" x="318.75" y="941.5507">Secret Code</text><rect fill="url(#g14uz287o4z7jy1)" height="60.3516" rx="4.1667" ry="4.1667" style="stroke:#EC7211;stroke-width:0.5208333333333334;" width="204.1667" x="487.5" y="833.138"/><text fill="#FFFFFF" font-family="&quot;Verdana&quot;" font-size="12.5" lengthAdjust="spacing" textLength="127.0833" x="503.125" y="860.3658">Decryption Failed +</text><text fill="#FFFFFF" font-family="&quot;Verdana&quot;" font-size="12.5" lengthAdjust="spacing" textLength="77.0833" x="503.125" y="874.9166">Blocked for:</text><text fill="#0000FF" font-family="&quot;Verdana&quot;" font-size="12.5" font-style="italic" lengthAdjust="spacing" textLength="91.6667" x="584.375" y="874.9166">Throttled time</text><polygon fill="#FFFFFF" points="414.3229,987.207,426.8229,999.707,414.3229,1012.207,401.8229,999.707,414.3229,987.207" style="stroke:#CCCCCC;stroke-width:0.5208333333333334;"/><ellipse cx="414.3229" cy="1044.4987" fill="none" rx="11.4583" ry="11.4583" style="stroke:#222222;stroke-width:1.0416666666666667;"/><ellipse cx="414.3229" cy="1044.4987" fill="#222222" rx="6.25" ry="6.25" style="stroke:#111111;stroke-width:1.0416666666666667;"/><line style="stroke:#FFFFFF;stroke-width:1.5625;stroke-dasharray:7.0,7.0;" x1="414.3229" x2="414.3229" y1="210.5143" y2="243.8477"/><polygon fill="#FFFFFF" points="410.1563,233.431,414.3229,243.8477,418.4896,233.431,414.3229,237.5977" style="stroke:#FFFFFF;stroke-width:1.0416666666666667;"/><line style="stroke:#EC7211;stroke-width:3.125;" x1="414.3229" x2="414.3229" y1="264.681" y2="310.4818"/><polygon fill="#EC7211" points="410.1563,300.0651,414.3229,310.4818,418.4896,300.0651,414.3229,304.2318" style="stroke:#EC7211;stroke-width:1.0416666666666667;"/><text fill="#4E5D6C" font-family="&quot;Verdana&quot;" font-size="12.5" lengthAdjust="spacing" textLength="88.5417" x="423.6979" y="288.0859">request Page</text><line style="stroke:#EC7211;stroke-width:3.125;" x1="414.3229" x2="414.3229" y1="356.2826" y2="377.1159"/><polygon fill="#EC7211" points="410.1563,366.6992,414.3229,377.1159,418.4896,366.6992,414.3229,370.8659" style="stroke:#EC7211;stroke-width:1.0416666666666667;"/><line style="stroke:#EC7211;stroke-width:3.125;" x1="414.3229" x2="414.3229" y1="422.9167" y2="443.75"/><polygon fill="#EC7211" points="410.1563,433.3333,414.3229,443.75,418.4896,433.3333,414.3229,437.5" style="stroke:#EC7211;stroke-width:1.0416666666666667;"/><line style="stroke:#EC7211;stroke-width:3.125;" x1="355.4688" x2="312.2396" y1="558.2682" y2="558.2682"/><line style="stroke:#EC7211;stroke-width:3.125;" x1="312.2396" x2="312.2396" y1="558.2682" y2="581.1849"/><polygon fill="#EC7211" points="308.0729,570.7682,312.2396,581.1849,316.4063,570.7682,312.2396,574.9349" style="stroke:#EC7211;stroke-width:1.0416666666666667;"/><line style="stroke:#EC7211;stroke-width:3.125;" x1="473.1771" x2="516.4063" y1="558.2682" y2="558.2682"/><line style="stroke:#EC7211;stroke-width:3.125;" x1="516.4063" x2="516.4063" y1="558.2682" y2="581.1849"/><polygon fill="#EC7211" points="512.2396,570.7682,516.4063,581.1849,520.5729,570.7682,516.4063,574.9349" style="stroke:#EC7211;stroke-width:1.0416666666666667;"/><line style="stroke:#EC7211;stroke-width:3.125;" x1="312.2396" x2="312.2396" y1="641.5365" y2="660.2865"/><line style="stroke:#EC7211;stroke-width:3.125;" x1="312.2396" x2="401.8229" y1="660.2865" y2="660.2865"/><polygon fill="#EC7211" points="391.4063,656.1198,401.8229,660.2865,391.4063,664.4531,395.5729,660.2865" style="stroke:#EC7211;stroke-width:1.0416666666666667;"/><line style="stroke:#EC7211;stroke-width:3.125;" x1="516.4063" x2="516.4063" y1="626.9857" y2="660.2865"/><line style="stroke:#EC7211;stroke-width:3.125;" x1="516.4063" x2="426.8229" y1="660.2865" y2="660.2865"/><polygon fill="#EC7211" points="437.2396,656.1198,426.8229,660.2865,437.2396,664.4531,433.0729,660.2865" style="stroke:#EC7211;stroke-width:1.0416666666666667;"/><line style="stroke:#EC7211;stroke-width:3.125;" x1="414.3229" x2="414.3229" y1="489.5508" y2="545.7682"/><polygon fill="#EC7211" points="410.1563,535.3516,414.3229,545.7682,418.4896,535.3516,414.3229,539.5182" style="stroke:#EC7211;stroke-width:1.0416666666666667;"/><line style="stroke:#EC7211;stroke-width:3.125;" x1="414.3229" x2="414.3229" y1="672.7865" y2="731.0872"/><polygon fill="#EC7211" points="410.1563,720.6706,414.3229,731.0872,418.4896,720.6706,414.3229,724.8372" style="stroke:#EC7211;stroke-width:1.0416666666666667;"/><text fill="#4E5D6C" font-family="&quot;Verdana&quot;" font-size="12.5" lengthAdjust="spacing" textLength="37.5" x="423.6979" y="708.6914">result</text><line style="stroke:#EC7211;stroke-width:3.125;" x1="119.7917" x2="119.7917" y1="884.1797" y2="914.3229"/><polygon fill="#EC7211" points="115.625,903.9063,119.7917,914.3229,123.9583,903.9063,119.7917,908.0729" style="stroke:#EC7211;stroke-width:1.0416666666666667;"/><line style="stroke:#EC7211;stroke-width:3.125;" x1="119.7917" x2="119.7917" y1="960.1237" y2="980.957"/><polygon fill="#EC7211" points="115.625,970.5404,119.7917,980.957,123.9583,970.5404,119.7917,974.707" style="stroke:#EC7211;stroke-width:1.0416666666666667;"/><line style="stroke:#EC7211;stroke-width:3.125;" x1="331.7708" x2="331.7708" y1="884.1797" y2="914.3229"/><polygon fill="#EC7211" points="327.6042,903.9063,331.7708,914.3229,335.9375,903.9063,331.7708,908.0729" style="stroke:#EC7211;stroke-width:1.0416666666666667;"/><line style="stroke:#EC7211;stroke-width:3.125;" x1="331.7708" x2="331.7708" y1="960.1237" y2="980.957"/><polygon fill="#EC7211" points="327.6042,970.5404,331.7708,980.957,335.9375,970.5404,331.7708,974.707" style="stroke:#EC7211;stroke-width:1.0416666666666667;"/><line style="stroke:#EC7211;stroke-width:3.125;" x1="164.5833" x2="298.9583" y1="871.6797" y2="871.6797"/><polygon fill="#EC7211" points="288.5417,867.513,298.9583,871.6797,288.5417,875.8464,292.7083,871.6797" style="stroke:#EC7211;stroke-width:1.0416666666666667;"/><line style="stroke:#EC7211;stroke-width:3.125;" x1="348.6979" x2="119.7917" y1="810.2214" y2="810.2214"/><line style="stroke:#EC7211;stroke-width:3.125;" x1="119.7917" x2="119.7917" y1="810.2214" y2="859.1797"/><polygon fill="#EC7211" points="115.625,848.763,119.7917,859.1797,123.9583,848.763,119.7917,852.9297" style="stroke:#EC7211;stroke-width:1.0416666666666667;"/><line style="stroke:#EC7211;stroke-width:3.125;" x1="364.5833" x2="451.0417" y1="871.6797" y2="871.6797"/><line style="stroke:#EC7211;stroke-width:3.125;" x1="451.0417" x2="451.0417" y1="871.6797" y2="935.14"/><line style="stroke:#EC7211;stroke-width:3.125;" x1="451.0417" x2="451.0417" y1="935.14" y2="980.957"/><polygon fill="#EC7211" points="446.875,970.5404,451.0417,980.957,455.2083,970.5404,451.0417,974.707" style="stroke:#EC7211;stroke-width:1.0416666666666667;"/><line style="stroke:#EC7211;stroke-width:3.125;" x1="119.7917" x2="451.0417" y1="980.957" y2="980.957"/><line style="stroke:#EC7211;stroke-width:3.125;" x1="479.9479" x2="589.5833" y1="810.2214" y2="810.2214"/><line style="stroke:#EC7211;stroke-width:3.125;" x1="589.5833" x2="589.5833" y1="810.2214" y2="833.138"/><polygon fill="#EC7211" points="585.4167,822.7214,589.5833,833.138,593.75,822.7214,589.5833,826.888" style="stroke:#EC7211;stroke-width:1.0416666666666667;"/><line style="stroke:#EC7211;stroke-width:3.125;" x1="239.0625" x2="239.0625" y1="980.957" y2="999.707"/><line style="stroke:#EC7211;stroke-width:3.125;" x1="239.0625" x2="401.8229" y1="999.707" y2="999.707"/><polygon fill="#EC7211" points="391.4063,995.5404,401.8229,999.707,391.4063,1003.8737,395.5729,999.707" style="stroke:#EC7211;stroke-width:1.0416666666666667;"/><line style="stroke:#EC7211;stroke-width:3.125;" x1="589.5833" x2="589.5833" y1="893.4896" y2="999.707"/><line style="stroke:#EC7211;stroke-width:3.125;" x1="589.5833" x2="426.8229" y1="999.707" y2="999.707"/><polygon fill="#EC7211" points="437.2396,995.5404,426.8229,999.707,437.2396,1003.8737,433.0729,999.707" style="stroke:#EC7211;stroke-width:1.0416666666666667;"/><line style="stroke:#EC7211;stroke-width:3.125;" x1="414.3229" x2="414.3229" y1="776.888" y2="797.7214"/><polygon fill="#EC7211" points="410.1563,787.3047,414.3229,797.7214,418.4896,787.3047,414.3229,791.4714" style="stroke:#EC7211;stroke-width:1.0416666666666667;"/><line style="stroke:#EC7211;stroke-width:3.125;" x1="414.3229" x2="414.3229" y1="1012.207" y2="1033.0404"/><polygon fill="#EC7211" points="410.1563,1022.6237,414.3229,1033.0404,418.4896,1022.6237,414.3229,1026.7904" style="stroke:#EC7211;stroke-width:1.0416666666666667;"/><!--MD5=[b8b5dd733a9c6a1cd0f6e4617754205e]
+@startuml DevChallenge2023_userflow
+!include https://raw.githubusercontent.com/bschwarz/puml-themes/master/themes/aws-orange-light/puml-theme-aws-orange-light.puml
+
+
+title Dev Challenge User Flow
+
+partition "**precondition**" {
+    :password : Attempted password
+    PRISM : Password augmentor
+    ORK - Server Node
+    Criteria - IP not throttled and Password is correct
+    ]
+}
+-[#white,dashed]->;
+
+start
+->request Page;
+:Enter password;
+:Blur password;
+:Send to ORK Nodes;
+partition "**ORK Nodes**" {
+        if (Criteria met?) then (yes)
+            :Apply Function (PRF) to\n the blurred password;
+        else (no)
+            :Send random response;
+        endif
+}
+
+->result;
+:Assemble and Test PRISM;
+if (PRISM correct?) then (yes)
+    if (example) then 
+        :Display //<color blue> "This is an Example"//;
+        elseif(prize) then
+        :Display //<color blue> Secret Code//;
+    endif
+    else (no)
+        :Decryption Failed + \nBlocked for: <color blue>//Throttled time//;  
+endif
+
+
+stop 
+
+@enduml
+
+@startuml DevChallenge2023_userflow
+
+
+
+skinparam backgroundColor transparent
+
+
+
+
+
+
+
+
+
+
+skinparam defaultFontName       "Verdana"
+skinparam defaultFontSize       12
+skinparam dpi                   100
+skinparam shadowing             false
+skinparam roundcorner           8
+skinparam ParticipantPadding    40
+skinparam BoxPadding            40
+skinparam Padding               5
+skinparam ArrowColor            #4E5D6C
+skinparam stereotype {
+    CBackgroundColor #ffffff
+    CBorderColor #cccccc
+    ABackgroundColor #4a9a35
+    ABorderColor #176702
+    IBackgroundColor #da5b41
+    IBorderColor #a7280e
+    EBackgroundColor #f08e41
+    EBorderColor #bd5b0e
+    NBackgroundColor #338fc9
+    NBorderColor #005c96
+}
+skinparam title {
+	FontColor	                 #4E5D6C
+	BorderColor	                 #FFFFFF
+	FontSize	    	         20
+	BorderRoundCorner            8
+	BorderThickness 	         1
+	BackgroundColor              #FFFFFF-#cccccc
+}
+
+skinparam legend {
+	BackgroundColor #FFFFFF
+	BorderColor #cccccc
+	FontColor #abb6c2
+}
+
+skinparam swimlane {
+	BorderColor #0073bb
+	BorderThickness 2
+	TitleBackgroundColor  #FFFFFF-#cccccc
+	TitleFontColor #EC7211
+}
+
+
+skinparam activity {
+		FontColor #FFF
+	BorderColor #EC7211
+	BackgroundColor #f08e41-#EC7211
+	BarColor #1D8102
+	StartColor #0073bb
+	EndColor #0073bb
+	DiamondBackgroundColor #ffffff
+  	DiamondBorderColor #cccccc
+  	DiamondFontColor #4E5D6C
+}
+
+skinparam participant {
+		FontColor #FFF
+	BorderColor #EC7211
+	BackgroundColor #f08e41-#EC7211
+	ParticipantBorderThickness 2
+}
+
+skinparam actor {
+		FontColor #FFF
+	BorderColor #EC7211
+	BackgroundColor #f08e41-#EC7211
+	FontColor #4E5D6C
+}
+
+skinparam arrow {
+	Thickness 3
+	Color #EC7211
+	FontColor #4E5D6C
+}
+
+skinparam sequence {
+	ArrowThickness 3
+	BorderColor #EC7211
+	TitleFontColor #EC7211
+	BackgroundColor transparent
+	StartColor #EC7211
+	EndColor #EC7211
+	BoxBackgroundColor transparent
+	BoxBorderColor #4E5D6C
+	BoxFontColor #4E5D6C
+	DelayFontColor #4E5D6C
+	LifeLineBorderColor #abb6c2
+	LifeLineBorderThickness 2
+	LifeLineBackgroundColor #bcc5ce
+	GroupBorderColor #4E5D6C
+	GroupFontColor #4E5D6C
+	GroupHeaderFontColor #0073bb
+	GroupBackgroundColor #FFFFFF
+	GroupBodyBackgroundColor transparent
+	GroupHeaderBackgroundColor transparent
+	DividerBackgroundColor #4E5D6C
+    DividerBorderColor #4E5D6C
+    DividerBorderThickness 2
+    DividerFontColor #abb6c2
+	ReferenceBackgroundColor transparent
+	ReferenceBorderColor #4E5D6C
+	ReferenceFontColor #4E5D6C
+	ReferenceHeaderFontColor #0073bb
+	ReferenceHeaderBackgroundColor #FFFFFF
+	StereotypeFontColor #FFF
+}
+
+skinparam partition {
+	BorderColor #EC7211
+	FontColor #EC7211
+	BackgroundColor transparent
+}
+
+skinparam collections {
+		FontColor #FFF
+	BorderColor #EC7211
+	BackgroundColor #f08e41-#EC7211
+}
+
+skinparam control {
+		FontColor #FFF
+	BorderColor #EC7211
+	BackgroundColor #f08e41-#EC7211
+	FontColor #4E5D6C
+}
+
+skinparam entity {
+		FontColor #FFF
+	BorderColor #EC7211
+	BackgroundColor #f08e41-#EC7211
+	FontColor #4E5D6C
+}
+
+skinparam boundary {
+		FontColor #FFF
+	BorderColor #EC7211
+	BackgroundColor #f08e41-#EC7211
+	FontColor #4E5D6C
+}
+
+skinparam agent {
+	BackgroundColor #EC7211
+	BorderColor #f08e41
+	FontColor #4E5D6C
+}
+
+skinparam note {
+	BorderThickness 1
+	BackgroundColor #0073bb
+	BorderColor #005c96
+	FontColor #FFF
+}
+
+skinparam artifact {
+	BackgroundColor #4E5D6C
+	BorderColor #717d89
+	FontColor #abb6c2
+}
+
+skinparam component {
+		FontColor #FFF
+	BorderColor #EC7211
+	BackgroundColor #f08e41-#EC7211
+}
+
+skinparam interface {
+	BackgroundColor  #a7280e
+	BorderColor  #d13212
+	FontColor #4E5D6C
+}
+
+skinparam storage {
+	BackgroundColor #EC7211
+  	BorderColor #bd5b0e
+	FontColor #FFF
+}
+
+skinparam node {
+	BackgroundColor  transparent
+	BorderColor #abb6c2
+	FontColor #abb6c2
+}
+
+skinparam cloud {
+	BackgroundColor transparent
+	BorderColor #4E5D6C
+	FontColor #abb6c2
+}
+
+skinparam database {
+		FontColor #FFF
+	BorderColor #EC7211
+	BackgroundColor #f08e41-#EC7211
+	FontColor #4E5D6C
+}
+
+skinparam class {
+		FontColor #FFF
+	BorderColor #EC7211
+	BackgroundColor #f08e41-#EC7211
+	HeaderBackgroundColor #f08e41
+	StereotypeFontColor #4E5D6C
+	BorderThickness 1
+	AttributeFontColor #FFF
+	AttributeFontSize 11
+}
+
+skinparam object {
+		FontColor #FFF
+	BorderColor #EC7211
+	BackgroundColor #f08e41-#EC7211
+	StereotypeFontColor #4E5D6C
+	BorderThickness 1
+	AttributeFontColor #FFF
+	AttributeFontSize 11
+}
+
+skinparam usecase {
+		FontColor #FFF
+	BorderColor #EC7211
+	BackgroundColor #f08e41-#EC7211
+	BorderThickness 2
+	StereotypeFontColor #EC7211
+}
+
+skinparam rectangle {
+	BackgroundColor transparent
+	FontColor #4E5D6C
+	BorderColor #4E5D6C
+	BorderThickness 2
+	StereotypeFontColor #abb6c2
+}
+
+skinparam package {
+	BackgroundColor #FFFFFF
+  	BorderColor #4E5D6C
+	FontColor #4E5D6C
+	BorderThickness 2
+}
+
+skinparam folder {
+	BackgroundColor #ffffff
+  	BorderColor #EC7211
+	FontColor #EC7211
+	BorderThickness 2
+}
+
+skinparam frame {
+	BackgroundColor #ffffff
+  	BorderColor #0073bb
+	FontColor #0073bb
+	BorderThickness 2
+}
+
+skinparam state {
+		FontColor #FFF
+	BorderColor #EC7211
+	BackgroundColor #f08e41-#EC7211
+	StartColor #0073bb
+	EndColor #0073bb
+	AttributeFontColor #4E5D6C
+	AttributeFontSize 11
+}
+
+skinparam queue {
+		FontColor #FFF
+	BorderColor #EC7211
+	BackgroundColor #f08e41-#EC7211
+}
+
+skinparam card {
+	BackgroundColor #0073bb
+	BorderColor #005c96
+	FontColor #FFF
+}
+
+skinparam file {
+	BackgroundColor #cccccc
+	BorderColor #abb6c2
+	FontColor #4E5D6C
+}
+
+
+skinparam stack {
+		FontColor #FFF
+	BorderColor #EC7211
+	BackgroundColor #f08e41-#EC7211
+}
+
+
+
+title Dev Challenge User Flow
+
+partition "**precondition**" {
+    :password : Attempted password
+    PRISM : Password augmentor
+    ORK - Server Node
+    Criteria - IP not throttled and Password is correct
+    ]
+}
+-[#white,dashed]->;
+
+start
+->request Page;
+:Enter password;
+:Blur password;
+:Send to ORK Nodes;
+partition "**ORK Nodes**" {
+        if (Criteria met?) then (yes)
+            :Apply Function (PRF) to\n the blurred password;
+        else (no)
+            :Send random response;
+        endif
+}
+
+->result;
+:Assemble and Test PRISM;
+if (PRISM correct?) then (yes)
+    if (example) then 
+        :Display //<color blue> "This is an Example"//;
+        elseif(prize) then
+        :Display //<color blue> Secret Code//;
+    endif
+    else (no)
+        :Decryption Failed + \nBlocked for: <color blue>//Throttled time//;  
+endif
+
+
+stop 
+
+@enduml
+
+PlantUML version 1.2022.13(Sat Nov 19 13:22:17 UTC 2022)
+(GPL source distribution)
+Java Runtime: OpenJDK Runtime Environment
+JVM: OpenJDK 64-Bit Server VM
+Default Encoding: UTF-8
+Language: en
+Country: null
+--></g></svg>
