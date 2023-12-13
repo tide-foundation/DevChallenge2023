@@ -201,7 +201,7 @@ S.UI = (function () {
 
     if(value !== welcomeMsg){ // don't wanna try welcome msg
       var config = {
-        urls: ["http://dcork1.azurewebsites.net"],
+        urls: ["https://dcork1.azurewebsites.net"],
         encryptedData: [document.getElementById("example").innerText, document.getElementById("test").innerText, document.getElementById("prize").innerText]
       }
 
