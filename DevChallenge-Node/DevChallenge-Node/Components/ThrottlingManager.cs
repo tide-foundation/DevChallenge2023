@@ -18,7 +18,7 @@
 
 using LazyCache;
 using Microsoft.Extensions.Caching.Memory;
-namespace DevChallenge2023_Node.Controllers
+namespace DevChallenge2023_Node.Components
 {
     public class ThrottlingManager
     {

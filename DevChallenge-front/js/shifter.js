@@ -26,7 +26,7 @@
 
 import {PrismFlow} from "../modules/DevChallenge-TideJS/index.js";
 
-var welcomeMsg = '..... | DO YOU | THINK | YOU HAVE | WHAT IT TAKES ? | Enter the Password...|';	
+var welcomeMsg = 'DO YOU HAVE | WHAT IT TAKES ? | Enter the Password...|';	
 var varSize = 13;
 
 var S = {
@@ -201,8 +201,8 @@ S.UI = (function () {
 
     if(value !== welcomeMsg){ // don't wanna try welcome msg
       var config = {
-        urls: ["https://ork1.westus2.cloudapp.azure.com"],
-        encryptedData: [document.getElementById("test").innerText, document.getElementById("prize").innerText]
+        urls: ["https://dcork1.azurewebsites.net"],
+        encryptedData: [document.getElementById("example").innerText, document.getElementById("test").innerText, document.getElementById("prize").innerText]
       }
 
       ui.classList.remove('ui');
