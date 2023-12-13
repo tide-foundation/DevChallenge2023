@@ -20,6 +20,7 @@ using Microsoft.AspNetCore.Mvc;
 using DevChallenge_TinySDK.Ed25519;
 using DevChallenge_TinySDK.Math;
 using System.Numerics;
+using DevChallenge2023_Node.Components;
 
 namespace DevChallenge_Node.Controllers
 {
@@ -53,11 +54,7 @@ namespace DevChallenge_Node.Controllers
         }
         private ActionResult<int> Throttle()
         {
-            var Ip = (HttpContext.Request.Headers["X-Forwarded-For"].FirstOrDefault() ?? "").Split(new char[] { ':' }).FirstOrDefault();
-            if (!String.IsNullOrEmpty(Ip)) 
-                return _throttlingManager.Throttle(Ip.ToString()).GetAwaiter().GetResult();
-            else
-                return _throttlingManager.Throttle(Request.HttpContext.Connection.RemoteIpAddress.ToString()).GetAwaiter().GetResult();
+            return _throttlingManager.Throttle(Request.HttpContext.Connection.RemoteIpAddress.ToString()).GetAwaiter().GetResult();
         }
     }
 }
