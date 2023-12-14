@@ -40,9 +40,6 @@ namespace DevChallenge_Node.Controllers
         {
             try
             {
-                var barredTime = Throttle().Value;
-                if (!barredTime.Equals(0)) 
-                    return StatusCode(429,barredTime.ToString());
                 
                 Point appliedPoint = PRISM.Apply(toApply, key);
                 return appliedPoint.ToBase64();
