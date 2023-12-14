@@ -1,5 +1,5 @@
 # The Tide Developer challenge - 2023
-The [Dev2023 challenge](http://h4DevChallenge.tide.org) is a technical puzzle challenge using  Tide Protocol's novel user authentication and digital protection technology, aimed at assessing the thinking, skills and personalities of software developers in areas relevant to Tide.
+The [Dev2023 challenge](http://DevChallenge.tide.org) is a technical puzzle challenge using  Tide Protocol's novel user authentication and digital protection technology, aimed at assessing the thinking, skills and personalities of software developers in areas relevant to Tide.
 
 This challenge is part of an engagement program by the [Tide Foundation](https://tide.org) with a specific focus on Tide's next-generation technology: A new technology that grants access using keys **NO ONE** will ever hold. Not even Tide! 
 
