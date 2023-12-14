@@ -15,8 +15,8 @@ The concept of this challenge is simple: A secret code is hidden and can only be
 1. **DevChallenge-front** - Front-end website for this challenge.
     1. **Modules/DevChallenge-TideJS** - Tide Libraries including encryption + PRISM
 1. **Diagrams** -  Diagrams for this challenge.
-    1. [**Technical diagram**](https://raw.githubusercontent.com/tide-foundation/DevChallenge2023/main/diagrams/svg/DevChallenge2023_SignInFlow.svg) - A technical diagram of the challenge.  
-    2. [**PRISM**](diagrams/svg/DevChallenge2023_prism.svg) - The mathematical diagram of Tide's PRISM. 
+    1. [**Technical diagram**](https://github.com/tide-foundation/DevChallenge2023/blob/main/diagrams/svg/DevChallenge2023_signin.svg) - A technical diagram of the challenge.  
+    2. [**PRISM**](https://github.com/tide-foundation/DevChallenge2023/blob/main/diagrams/svg/DevChallenge2023_Prism.svg) - The mathematical diagram of Tide's PRISM. 
     3. [**User flow**](https://github.com/tide-foundation/DevChallenge2023/blob/main/diagrams/svg/DevChallenge2023_userflow.svg) - A user flow diagram. 
 
 # Installation
